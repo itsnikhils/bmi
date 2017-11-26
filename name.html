@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+		Fill in details 
+	</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" >
+<style type="text/css">
+	
+
+
+.head{
+	
+font-family: Montserrat;
+
+position: relative;
+left: 200px;
+font-weight: 60;
+
+}
+
+</style>
+<body>
+
+
+<h1>  <span class ="head"> Hi , Please spend a momemt to fill in your details </span> </h1>
+
+<form>
+	 name :
+
+	
+	<input type="text" id = "name">
+
+	<p> age group : <select>(
+			
+			<option> 15-20</option>
+			<option>21-30</option>
+			<option>31-49</option>
+			<option>greater than 50 </option>
+		</select>
+	</p>
+	<p> i accept to the terms amd coniditions
+		<input type="radio" > 
+	</p>
+	
+	<input type="submit" onclick="text()"> 
+	
+	<script type="text/javascript">
+
+
+	
+	function text() {
+	
+	var a = document.getElementById("name").value;
+	if (a =="") {
+	
+		alert("pls fill out name tab");
+	}
+	else{
+	window.open("https:google.com");
+	 }
+	}
+</script>
+</form>
+
+
+
+</body>
+</html>
