@@ -28,7 +28,7 @@ font-weight: 60;
 
 <h1>  <span class ="head"> Hi , Please spend a momemt to fill in your details </span> </h1>
 
-<form>
+<form name="form1">
 	 name :
 
 	
@@ -42,10 +42,11 @@ font-weight: 60;
 			<option>greater than 50 </option>
 		</select>
 	</p>
-	<p> i accept to the terms amd coniditions
-		<input type="radio" > 
-	</p>
+
 	
+	
+	</form>
+
 	<input type="submit" onclick="text()"> 
 	
 	<script type="text/javascript">
@@ -53,19 +54,41 @@ font-weight: 60;
 
 	
 	function text() {
-	
-	var a = document.getElementById("name").value;
-	if (a =="") {
-	
-		alert("pls fill out name tab");
-	}
-	else{
-	<a href("http:google.co.in") </a>;
-	 }
-	}
-</script>
-</form>
 
+		var a= document.getElementById("name").value;
+
+ 
+        if (a=="") {
+
+
+        	alert("pls key in your name ");
+
+        }  
+
+ else {
+
+ 	calculator();
+ }
+   
+}
+
+
+
+function calculator(){
+
+
+var text_to_save=document.getElementById("name").value;
+
+window.open("final.html");
+
+
+
+
+}
+
+
+
+</script>
 
 
 </body>
