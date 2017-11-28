@@ -5,22 +5,62 @@
 		
 		test
 	</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Baskerville" rel="stylesheet">
+
+
+<style type="text/css">
+
+.f1 {
+	
+background-color: #58FAF4;
+
+}
+
+
+.f2{
+
+	font-family: Crimson+Text;
+
+	font-weight: 100;
+
+	position: relative;
+
+	left: 200px;
+}
+
+.f3{
+
+font-family: Libre+Baskerville;
+
+position: relative;
+left :500px;
+
+top:500px;
+
+}
+</style>
+
 </head>
-<body>
+<body class = "f1">
 
-<h1> <p> hi </p>
-<h1> 
+	<h1 class="f2"> key in the details </h1>
 
+ 
+
+<div class="f2" >
 <form>
 	
 
-	height in meters :
+	height in feets  :
 
 
 <input type="text" id = "hei" >
 <p>
 
-	weight  in kg :
+	weight in kgs  :
 
 
 <input type="text" id = "wei">
@@ -29,14 +69,17 @@
 
 <input type="submit" onclick="text()">
 
+</div>
 
 
 
 <script type="text/javascript">
+	
 
  function text()
 
 {
+
 
 
 var a = document.getElementById("hei").value;
@@ -44,19 +87,37 @@ var a = document.getElementById("hei").value;
 var b = document.getElementById("wei").value;
 
 
-var bmi = b/(a*a);
+
+var c = a*0.3048;
+
+var bmi = b/(c*c);
 
 
 
+if(isNaN(bmi)==true)
+{
+
+alert("invalid input");
+}
+
+else{
+
+  
+
+alert("BMI IS : "+bmi);
 
 
-alert("bmi = "+ bmi);
+
+}
+
+
 }
 
 
 
+
 </script>
-	
+
 </form>
 
 </body>
