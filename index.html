@@ -3,110 +3,106 @@
 <head>
 	<title>
 		
-		Fill in details 
+		BMI CALCULATOR
 	</title>
 </head>
-
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" >
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
 <style type="text/css">
-	
 
-
-.bj{
-
-
-	background-color: #5EA096;
-}
-
-
-.jb{
+.jq{
 
 
 	position: relative;
-	left: 500px;
-	top: 50px;
-font-family: Montserrat;
-
+	left: 350px;
 }
-.head{
 	
-font-family: Montserrat;
+.ig{
 
-position: relative;
-left: 200px;
-font-weight: 60;
-
+	position: relative;
+	left: 400px;
 }
 
+.bk{
+
+	background-color: #8C7795;
+}
+
+	.head{
+
+		font-family: Montserrat;
+
+		position: relative;
+
+		
+
+
+		background-color: #8CF185;
+
+		font-weight: 50;
+
+	}
+
+	.captcha
+	{
+
+
+		font-family: Roboto+Condensed;
+	
+	
+		position: relative;
+		left: 50px;
+		top: 50px;
+		
+
+
+
+	}
 </style>
-<body class="bj">
+
+<body class="bk">
+
+<h1 class="head"> Hi , please fill the captcha to proceed </h1>
 
 
-<h1>  <span class ="head"> Hi , Please spend a momemt to fill in your details </span> </h1>
 
-<form name="form1" class="jb">
-	 name :
-
+<form >
 	
-	<input type="text" id = "name">
+<p> <div class="captcha"> enter any digit from 1 to 10 	<input type="text" id="Number" > </p>
 
-	<p> age group : <select>(
-			
-			<option> 15-20</option>
-			<option>21-30</option>
-			<option>31-49</option>
-			<option>greater than 50 </option>
-		</select>
-	</p>
-
-	
-	
-	
-
-	<input type="submit" onclick="text()"> 
-	</form>
-	
-	<script type="text/javascript">
-
-
-	
-	function text() {
-
-		var a= document.getElementById("name").value;
-
+<input type="submit" onclick="text()">
+</div>
  
-        if (a=="") {
+<script type="text/javascript">
+	function text() {
+	
+		var a= document.getElementById("Number").value;
 
+	if(a>=1 && a<=10)
+{
+	window.open("name.html");
+	
+}
 
-        	alert("pls key in your name ");
-
-        }  
-
- else {
-
- 	calculator();
- }
-   
+else{
+	document.getElementById("Number").focus();
+	alert("please enter correctly");
+	
 }
 
 
-
-function calculator(){
-
-
-var text_to_save=document.getElementById("name").value;
-
-window.open("final.html");
-
-
-
-
 }
-
-
-
 </script>
+</form>
 
+
+
+
+	<p class="ig" > <img src="image.jpg" width="500px;" ></p>
+
+<p class="jq"> powered by : <img src="google.png"> </p>
 
 </body>
 </html>
