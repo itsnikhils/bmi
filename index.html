@@ -3,71 +3,109 @@
 <head>
 	<title>
 		
-		BMI CALCULATOR
+		Fill in details 
 	</title>
 </head>
+
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" >
-
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-
 <style type="text/css">
 	
 
 
-	.head{
-
-		font-family: Montserrat;
-
-		background-color: #223E96;
-
-		font-weight: 50;
-
-	}
-
-	.captcha
-	{
+.bj{
 
 
-		font-family: Roboto+Condensed;
-		font-size: 4;
-		background-color: #33DEE4;
-		position: relative;
-		
-	}
+	background-color: #5EA096;
+}
+
+
+.jb{
+
+
+	position: relative;
+	left: 500px;
+	top: 50px;
+font-family: Montserrat;
+
+}
+.head{
+	
+font-family: Montserrat;
+
+position: relative;
+left: 200px;
+font-weight: 60;
+
+}
+
 </style>
+<body class="bj">
 
-<body>
 
-<h1 class="head"> Hi , please fill the captcha to proceed </h1>
+<h1>  <span class ="head"> Hi , Please spend a momemt to fill in your details </span> </h1>
 
-<form >
+<form name="form1" class="jb">
+	 name :
+
 	
-<p> <div class="captcha"> enter any digit from 1 to 10 </div>	<input type="text" id="Number" > </p>
+	<input type="text" id = "name">
 
-<input type="submit" onclick="text()">
- 
-<script type="text/javascript">
+	<p> age group : <select>(
+			
+			<option> 15-20</option>
+			<option>21-30</option>
+			<option>31-49</option>
+			<option>greater than 50 </option>
+		</select>
+	</p>
+
+	
+	
+	
+
+	<input type="submit" onclick="text()"> 
+	</form>
+	
+	<script type="text/javascript">
+
+
+	
 	function text() {
-	
-		var a= document.getElementById("Number").value;
 
-	if(a>=1 && a<=10)
-{
-	window.open("name.html");
-	
+		var a= document.getElementById("name").value;
+
+ 
+        if (a=="") {
+
+
+        	alert("pls key in your name ");
+
+        }  
+
+ else {
+
+ 	calculator();
+ }
+   
 }
 
-else{
-	document.getElementById("Number").focus();
-	alert("please enter correctly");
-	
-}
+
+
+function calculator(){
+
+
+var text_to_save=document.getElementById("name").value;
+
+window.open("final.html");
+
+
 
 
 }
+
+
+
 </script>
-</form>
-
 
 
 </body>
